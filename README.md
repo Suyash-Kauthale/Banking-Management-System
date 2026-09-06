@@ -2,7 +2,6 @@
 
 CS2303 Object Oriented Programming — Course Project
 
-Only 5 files. Everything here uses concepts from Units 1–4 of the syllabus.
 
 ## Build
 
@@ -18,7 +17,6 @@ g++ -std=c++11 -Wall main.cpp Account.cpp Bank.cpp -o bank
 ./bank
 ```
 
-No wildcards, so this works in Command Prompt directly.
 
 ## Files
 
@@ -28,9 +26,8 @@ No wildcards, so this works in Command Prompt directly.
 | `Bank.h` / `.cpp` | holds all accounts, does deposit / withdraw / transfer |
 | `main.cpp` | the menu — all `cout` and `cin` live here |
 
-The important habit: `Account` and `Bank` contain **no `cout` and no `cin`**.
-They return values, and `main.cpp` decides what to print. Keep it that way — it
-is what lets you add file saving later without rewriting anything.
+`Account` and `Bank` contain **no `cout` and no `cin`**.
+They return values, and `main.cpp` decides what to print.
 
 ## OOP concepts and where they are
 
@@ -57,11 +54,7 @@ is what lets you add file saving later without rewriting anything.
 5. Option **4** — transfer between two accounts
 6. Option **7** — total from the static member
 
-Steps 2 and 3 are the ones to explain: the **same** `withdraw()` call, two
-different results, because the object types are different. That is polymorphism.
 
 ## Not built yet
 
-File saving, login, Fixed Deposit accounts, transaction history. Data is lost
-when the program closes — that is expected for now. File saving is the next step,
-after Unit 5.
+File saving, login, Fixed Deposit accounts, transaction history.
