@@ -15,7 +15,7 @@ protected:
 
 public:
     Account(string id, string name, double balance);
-    virtual ~Account();         // virtual = important, see note in README
+    virtual ~Account();         // virtual
 
     // Pure virtual: every child class MUST write its own version
     virtual double interestRate() const = 0;

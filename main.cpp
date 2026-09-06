@@ -137,8 +137,9 @@ void listAccounts(Bank& bank) {
          << right << setw(12) << "BALANCE" << "\n";
     cout << string(50, '-') << "\n";
 
-    // Every item is an Account*, but type() gives the correct
-    // answer for each one. That is polymorphism.
+    /* Every item is an Account*, but type() gives the correct
+     answer for each one. That is polymorphism.
+    */
     for (unsigned int i = 0; i < all.size(); i++) {
         cout << left << setw(10) << all[i]->getId()
              << setw(18) << all[i]->getName()

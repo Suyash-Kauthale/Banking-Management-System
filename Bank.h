@@ -7,7 +7,6 @@
 #include "Account.h"
 
 // Holds all the accounts and does the banking operations.
-// Notice: no cout / cin anywhere in this class - printing is main's job.
 class Bank {
 private:
     std::vector<Account*> accounts;   // pointers to base class
